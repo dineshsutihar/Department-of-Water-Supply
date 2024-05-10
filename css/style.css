@@ -2,5 +2,147 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    
+}
+
+/* Navbar */
+
+#topnav{
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+   background: rgb(150, 7, 7);
+   padding: 0 50px 0 0;
+   a{
+    color: white;
+   }
+   i{
+    color: yellow;
+   }
+   #hadercontent{
+    background-color: rgb(121, 23, 23);
+    height: 100%;
+    width: 15%;
+    /* text-align: left; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+
+   }
+}
+.lang{
+    width: 10%;
+    padding: 5px;
+    text-transform: uppercase;
+    a{
+        margin:0 10px;
+        text-decoration: none;
+    }
+    
+}
+#rotation{
+    width: 80%;
+    overflow: hidden;
+}
+
+.marquee-container { 
+    display: flex; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: marquee 30s linear infinite; 
+    min-width: 100%;
+    margin: 0 auto;
+} 
+
+.marquee-content { 
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px;
+    
+    a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+       
+    }
+} 
+
+@keyframes marquee { 
+    0% { 
+        transform: translateX(100%); 
+    } 
+
+    100% { 
+        transform: translateX(-100%); 
+    } 
+} 
+
+
+/* Mid nav */
+#midnav {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 120px;
+}
+
+#midnav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/public/img/midnav.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+#midnav img {
+    width: auto;
+    height: 90%;
+    object-fit: contain;
+}
+
+#midnav img:nth-child(2){
+    height:45%;
+    margin:0 50px 0 30px;
+}
+
+
+/* Main nav and drop down nav */
+
+nav{
+    background-color: rgb(150, 7, 7);
+    padding: 15px 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
 }
