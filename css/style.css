@@ -1,29 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navbar */
 
-#topnav{
-    color: rgb(255, 255, 255);
-    /* text-align: center; */
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   
-   background: rgb(150, 7, 7);
-   padding: 0 50px 0 0;
-   a{
+#topnav {
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(150, 7, 7);
+  padding: 0 50px 0 0;
+  a {
     color: white;
-   }
-   i{
+  }
+  i {
     color: yellow;
-   }
-   #hadercontent{
+  }
+  #hadercontent {
     background-color: rgb(121, 23, 23);
     height: 100%;
     width: 15%;
@@ -32,117 +31,262 @@
     align-items: center;
     justify-content: center;
     border-radius: 0 25px 25px 0;
-
-   }
+  }
 }
-.lang{
-    width: 10%;
-    padding: 5px;
-    text-transform: uppercase;
-    a{
-        margin:0 10px;
-        text-decoration: none;
-    }
-    
+.lang {
+  width: 10%;
+  padding: 5px;
+  text-transform: uppercase;
+  a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
 }
-#rotation{
-    width: 80%;
-    overflow: hidden;
+#rotation {
+  width: 80%;
+  overflow: hidden;
 }
 
-.marquee-container { 
-    display: flex; 
-    overflow: hidden; 
-    white-space: nowrap; 
-    animation: marquee 30s linear infinite; 
-    min-width: 100%;
-    margin: 0 auto;
-} 
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  min-width: 100%;
+  margin: 0 auto;
+}
 
-.marquee-content { 
-    margin-right: 10px;
+.marquee-content {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 10px;
+
+  a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    margin: 10px;
-    
-    a{
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-       
-    }
-} 
+    gap: 10px;
+  }
+}
 
-@keyframes marquee { 
-    0% { 
-        transform: translateX(100%); 
-    } 
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
 
-    100% { 
-        transform: translateX(-100%); 
-    } 
-} 
-
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 /* Mid nav */
 #midnav {
-    position: relative;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 120px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
 }
 
 #midnav::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("/public/img/midnav.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.35;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/public/img/midnav.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  z-index: -1;
 }
 
 #midnav img {
-    width: auto;
-    height: 90%;
-    object-fit: contain;
+  width: auto;
+  height: 90%;
+  object-fit: contain;
 }
 
-#midnav img:nth-child(2){
-    height:45%;
-    margin:0 50px 0 30px;
+#midnav img:nth-child(2) {
+  height: 45%;
+  margin: 0 50px 0 30px;
 }
-
 
 /* Main nav and drop down nav */
 
-nav{
-    background-color: rgb(150, 7, 7);
-    padding: 15px 0;
+nav {
+  background-color: rgb(150, 7, 7);
+  padding: 15px 0;
 }
 
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
 }
 
-nav ul li{
-    position: relative;
+nav ul li {
+  position: relative;
 }
 
-nav ul li a{
-    text-decoration: none;
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Main Contetn */
+/* library button */
+.btn {
+  border-radius: 0 20px 20px 0;
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: sticky;
+  top: 50vh;
+  left: 0;
+}
+
+/* slider */
+.slider {
+  width: 100%;
+  height: 85vh;
+  /* display: flex;
+    flex-direction: column; */
+  /* background-image: url("/public/img/anime.svg"); */
+  /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  overflow: hidden;
+  position: relative;
+
+  .slide {
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    display: none;
     color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .slide h4{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .slide.active{
+    display: block;
+  }
+
+  .slide::after {
+    content: "";
+    position: absolute;
+    bottom: -57%;
+    width: 100%;
+    height: 100%;
+    background: url("/public/img/anime.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+}
+.prev-btn,
+.next-btn {
+  position:absolute;
+  top: 50%;
+  transform: translateY(50%);
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(48, 47, 47);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  /* height: 50dvh; */
+}
+
+.footercontentone {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.col-md-6 ul {
+  list-style: none;
+  text-align: left;
+}
+.footer-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.col-md-6 ul li {
+  margin: 15px 0;
+}
+
+.col-md-6 ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.media {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.row {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.col-md-12 {
+  i {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px 0 10px;
+  }
+}
+
+/* noen */
+
+.slider .none {
+  display: none;
 }
